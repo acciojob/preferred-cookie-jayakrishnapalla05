@@ -6,8 +6,8 @@ form.addEventListener("submit", function (event) {
   const fontcolor = document.querySelector("#fontcolor").value;
   document.documentElement.style.setProperty("--fontsize", `${fontsize}px`);
   document.documentElement.style.setProperty("--fontcolor", `${fontcolor}`);
-  document.cookie = `fontsize=${fontsize};max-age=31536000`;
-  document.cookie = `fontcolor=${fontcolor};max-age=31536000`;
+  document.cookie = `fontsize=${fontsize};max-age=30`;
+  document.cookie = `fontcolor=${fontcolor};max-age=30`;
 });
 
 const cookieString = document.cookie;
